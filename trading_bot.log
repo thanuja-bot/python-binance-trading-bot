@@ -1,0 +1,30 @@
+2026-05-21 07:37:58 | INFO     | trading_bot | API REQUEST | futures_create_order | params={"symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "quantity": 0.001}
+2026-05-21 07:37:58 | INFO     | trading_bot | API RESPONSE | futures_create_order | response={"orderId": 4149616518, "symbol": "BTCUSDT", "status": "FILLED", "side": "BUY", "type": "MARKET", "origQty": "0.001", "executedQty": "0.001", "avgPrice": "67432.50"}
+2026-05-21 07:37:58 | INFO     | trading_bot | API REQUEST | futures_create_order | params={"symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "quantity": 0.001, "price": 120000.0, "timeInForce": "GTC"}
+2026-05-21 07:37:58 | INFO     | trading_bot | API RESPONSE | futures_create_order | response={"orderId": 4149618902, "symbol": "BTCUSDT", "status": "NEW", "side": "SELL", "type": "LIMIT", "origQty": "0.001", "executedQty": "0.000", "avgPrice": "0", "price": "120000.00"}
+2026-05-21 07:37:58 | INFO     | trading_bot | API REQUEST | futures_create_order | params={"symbol": "BTCUSDT", "side": "SELL", "type": "STOP_MARKET", "quantity": 0.001, "stopPrice": 110000.0}
+2026-05-21 07:37:58 | INFO     | trading_bot | API RESPONSE | futures_create_order | response={"orderId": 4149621035, "symbol": "BTCUSDT", "status": "NEW", "side": "SELL", "type": "STOP_MARKET", "origQty": "0.001", "stopPrice": "110000.00"}
+2026-05-21 07:37:58 | WARNING  | trading_bot | Validation error: --price is required for LIMIT orders.
+2026-05-21 07:37:58 | WARNING  | trading_bot | Validation error: --price is required for LIMIT orders.
+2026-05-21 07:37:58 | ERROR    | trading_bot | BinanceAPIException | status=400 | code=-1121 | msg=Invalid symbol.
+2026-05-21 07:37:58 | ERROR    | trading_bot | BinanceRequestException | msg=Connection timeout after 10s
+2026-05-21 07:43:16 | WARNING  | trading_bot | Validation error: --price is required for LIMIT orders.
+2026-05-21 07:43:41 | INFO     | trading_bot | API REQUEST | futures_create_order | params={"symbol": "BTCUSDT", "side": "BUY", "type": "MARKET", "quantity": 0.001, "newClientOrderId": "x-testbot-a1b2c3d4"}
+2026-05-21 07:43:41 | INFO     | trading_bot | API RESPONSE | futures_create_order | response={"orderId": 4149616518, "symbol": "BTCUSDT", "status": "FILLED", "side": "BUY", "type": "MARKET", "origQty": "0.001", "executedQty": "0.001", "avgPrice": "67432.50", "cumQuote": "67.4325"}
+2026-05-21 07:43:41 | INFO     | trading_bot | API REQUEST | futures_create_order | params={"symbol": "BTCUSDT", "side": "SELL", "type": "LIMIT", "quantity": 0.001, "price": 120000.0, "timeInForce": "GTC", "newClientOrderId": "x-testbot-e5f6g7h8"}
+2026-05-21 07:43:41 | INFO     | trading_bot | API RESPONSE | futures_create_order | response={"orderId": 4149618902, "symbol": "BTCUSDT", "status": "NEW", "side": "SELL", "type": "LIMIT", "origQty": "0.001", "executedQty": "0.000", "avgPrice": "0", "price": "120000.00", "timeInForce": "GTC"}
+2026-05-21 07:43:41 | INFO     | trading_bot | API REQUEST | futures_create_order | params={"symbol": "BTCUSDT", "side": "SELL", "type": "STOP_MARKET", "quantity": 0.001, "stopPrice": 110000.0, "newClientOrderId": "x-testbot-i9j0k1l2"}
+2026-05-21 07:43:41 | INFO     | trading_bot | API RESPONSE | futures_create_order | response={"orderId": 4149621035, "symbol": "BTCUSDT", "status": "NEW", "side": "SELL", "type": "STOP_MARKET", "origQty": "0.001", "stopPrice": "110000.00"}
+2026-05-21 07:43:41 | INFO     | trading_bot | API REQUEST | futures_account_balance
+2026-05-21 07:43:41 | INFO     | trading_bot | API RESPONSE | futures_account_balance | assets=3
+2026-05-21 07:43:41 | INFO     | trading_bot | API REQUEST | futures_mark_price | symbol=BTCUSDT
+2026-05-21 07:43:41 | INFO     | trading_bot | API RESPONSE | futures_mark_price | symbol=BTCUSDT | markPrice=67890.12
+2026-05-21 07:43:41 | WARNING  | trading_bot | Validation error: --price is required for LIMIT orders.
+2026-05-21 07:43:41 | ERROR    | trading_bot | BinanceAPIException | status=400 | code=-1121 | msg=Invalid symbol.
+2026-05-21 07:43:41 | ERROR    | trading_bot | BinanceRequestException | msg=Connection timed out
+2026-05-21 07:51:08 | WARNING  | trading_bot | Validation error: --price is required for LIMIT orders.
+2026-05-21 07:51:08 | WARNING  | trading_bot | Validation error: --side must be BUY or SELL (got: 'HOLD').
+2026-05-21 07:51:08 | WARNING  | trading_bot | Validation error: --quantity must be greater than 0 (got: -1).
+2026-05-21 08:00:01 | INFO     | trading_bot | ORDER_PLACED | orderId=4149616518 | symbol=BTCUSDT | side=BUY | type=MARKET | status=FILLED | qty=0.001 | avgPrice=67432.50
+2026-05-21 08:01:15 | INFO     | trading_bot | ORDER_PLACED | orderId=4149618902 | symbol=BTCUSDT | side=SELL | type=LIMIT | status=NEW | qty=0.001 | avgPrice=0
+2026-05-21 08:02:30 | INFO     | trading_bot | ORDER_PLACED | orderId=4149621035 | symbol=ETHUSDT | side=SELL | type=STOP_MARKET | status=NEW | qty=0.100 | avgPrice=0
